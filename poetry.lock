@@ -1263,14 +1263,14 @@ source = ["Cython (>=3.0.10)"]
 
 [[package]]
 name = "marimo"
-version = "0.6.17"
+version = "0.6.19"
 description = "A library for making reactive notebooks and apps"
 category = "main"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "marimo-0.6.17-py3-none-any.whl", hash = "sha256:16585a60024a5721dd1c792e10a3fcf9d571ae0dcfb05befb6115a07485e6752"},
-    {file = "marimo-0.6.17.tar.gz", hash = "sha256:bcae296bb0a7550a7bf0384414890d2cd4b9cb7e71f585769d5dddd093814c80"},
+    {file = "marimo-0.6.19-py3-none-any.whl", hash = "sha256:64014f47153ed4aa192df42cee3ecabffb23c008c4c005253316760e8e1eb770"},
+    {file = "marimo-0.6.19.tar.gz", hash = "sha256:3d0aea3aa5a1438b33da4497f00e0d5a12c97a002408113b226faed752a4981d"},
 ]
 
 [package.dependencies]
@@ -1452,24 +1452,6 @@ files = [
 
 [package.dependencies]
 traitlets = "*"
-
-[[package]]
-name = "mosek"
-version = "10.2.0"
-description = "Python API for Mosek"
-category = "main"
-optional = false
-python-versions = "<3.13,>=3.7"
-files = [
-    {file = "Mosek-10.2.0-cp37-abi3-macosx_10_15_x86_64.whl", hash = "sha256:596ee89956c5270ae01b3028212fdfb0fd8c406ac2e0ab1add771d69cfa00685"},
-    {file = "Mosek-10.2.0-cp37-abi3-manylinux2014_x86_64.whl", hash = "sha256:247239592d794ab6c52275cf255b8d74622f8f3e4a3103cb1281207466f2ff2d"},
-    {file = "Mosek-10.2.0-cp37-abi3-manylinux_2_29_aarch64.whl", hash = "sha256:726b6e9da58bafb22f6f637fde2ab85ef10e7061e9a3f3d62a36ccf204f8e1b6"},
-    {file = "Mosek-10.2.0-cp37-abi3-win_amd64.whl", hash = "sha256:9a51ef9978ed3bbe061c162727bbc36cde5d42b303a8f13a2d01c109e8ae2774"},
-    {file = "Mosek-10.2.0-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:6a0881b605eabe24333d60f47ab06b972298e091e2a59b31afd0b223c1f13299"},
-]
-
-[package.dependencies]
-numpy = "*"
 
 [[package]]
 name = "multitasking"
@@ -2702,4 +2684,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.13"
-content-hash = "77ce5466a3fd50f81795e2af00b886d867fcc686772b69a7b74bb0e0c1c80e59"
+content-hash = "a1568a4f899d7ddbe9173b78b60b9e5668c8c7ae850f5b0549e825b86a1586f3"
