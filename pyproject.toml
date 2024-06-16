@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "cvx-finance-examples"
+version = "0.0.0"
+description = "Convex optimizatin in finance examples"
+authors = ["Stephen Boyd", "Kasper Johansson", "Philipp Schiele"]
+readme = "README.md"
+repository = "https://github.com/cvxgrp/cvx-finance-examples"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+numpy = "*"
+cvxpy = "*"
+yfinance = "*"
+matplotlib = "*"
+ipykernel = "*"
+tqdm = "*"
+mosek = "^10.1.28"
+nelson-siegel-svensson = "0.5.0"
+marimo = "^0.6.13"
+Jinja2 = "*"
