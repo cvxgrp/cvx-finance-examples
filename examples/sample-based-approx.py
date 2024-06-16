@@ -81,6 +81,7 @@ def __(cp, np):
 
     def put_payoff(S, K):
         return np.maximum(K - S, 0)
+
     return call_payoff, put_payoff, u
 
 
@@ -131,7 +132,8 @@ def __(cp, np, u):
         problem = cp.Problem(cp.Maximize(objective), constraints)
         problem.solve(solver=cp.MOSEK, verbose=False)
         return w.value
-    return solve_utility_maximization,
+
+    return (solve_utility_maximization,)
 
 
 @app.cell
@@ -384,7 +386,8 @@ def __(
 @app.cell
 def __():
     import marimo as mo
-    return mo,
+
+    return (mo,)
 
 
 if __name__ == "__main__":

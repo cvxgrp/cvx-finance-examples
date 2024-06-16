@@ -22,6 +22,7 @@ def __():
     import cvxpy as cp
     import yfinance as yf
     import matplotlib.pyplot as plt
+
     return cp, np, pd, plt, yf
 
 
@@ -139,7 +140,8 @@ def __(cp, np):
         prob.solve(verbose=False, solver=solver)
 
         return Theta.value
-    return solve_spares_inverse_problem,
+
+    return (solve_spares_inverse_problem,)
 
 
 @app.cell
@@ -174,7 +176,7 @@ def __(mo):
         label=r"$\lambda$",
         show_value=True,
     )
-    return lambda_slider,
+    return (lambda_slider,)
 
 
 @app.cell
@@ -220,7 +222,8 @@ def __(lambda_slider, np, pd, plt, returns, solve_spares_inverse_problem):
 @app.cell
 def __():
     import marimo as mo
-    return mo,
+
+    return (mo,)
 
 
 if __name__ == "__main__":
