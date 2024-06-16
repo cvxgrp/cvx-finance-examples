@@ -1,6 +1,6 @@
 import marimo
 
-__generated_with = "0.6.17"
+__generated_with = "0.6.19"
 app = marimo.App()
 
 
@@ -130,7 +130,7 @@ def __(cp, np, u):
         constraints = [cp.sum(w) == 1]
 
         problem = cp.Problem(cp.Maximize(objective), constraints)
-        problem.solve(solver=cp.MOSEK, verbose=False)
+        problem.solve(solver="CLARABEL", verbose=False)
         return w.value
 
     return (solve_utility_maximization,)
@@ -258,9 +258,7 @@ def __(
 @app.cell
 def __(mo):
     mo.md(
-        r"""
-        (Results may take a few seconds, or even minutes, to compute when $N$ is large.)
-        """
+        r"(Results may take a few seconds, or even minutes, to compute when $N$ is large.)"
     )
     return
 
